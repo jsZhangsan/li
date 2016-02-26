@@ -1,5 +1,4 @@
-
-.win_bg_black {
+.win-bg-black {
 	position: fixed;
 	top: 0%;
 	left: 0%;
@@ -12,7 +11,7 @@
 	filter: alpha(opacity=50);
 }
 
-.win_dialog {
+.win-dialog {
 	z-index: 1100;
 	border: 1px solid #CCCCCC;
 	position: absolute;
@@ -20,8 +19,7 @@
 	left: 50%;
 }
 
-.win_top {
-	
+.win-top {
 	background: #71B25F;
 	color: #fff;
 	font-weight: 700;
@@ -29,77 +27,69 @@
 	padding: 5px 8px;
 }
 
-.win_erro_btn {
+.win-erro-btn {
 	cursor: pointer;
 	float: right;
 }
 
-.win_erro_btn:hover {
+.win-erro-btn:hover {
 	color: #31B0D5;
 }
-.win_content {
+
+.win-content {
 	min-width: 200px;
 	background-color: #FFFFFF;
 }
+
+
 /*alert*/
-.alert-content {
-				width: 80%;
-				margin: 0 auto;
-				padding: 20px 0;
-			}
-			
-			.alert-foot {
-				text-align: center;
-			}
-			
-			.alert-foot button {
-				margin: 10px 20px;
-			}
-			
-			.pro-foot-contert {
-				text-align: right;
-			}
+
+
+
+
 /*按钮*/
-			
-			
-			.btn {
-				display: inline-block;
-				padding: 4px 10px;
-				margin-bottom: 0;
-				font-size: 14px;
-				line-height: 1.42857143;
-				text-align: center;
-				white-space: nowrap;
-				vertical-align: middle;
-				cursor: pointer;
-			}
-			
-			.btn-ok {
-				background: #71B25F;
-				color: #fff;
-			}
-			
-			.btn-ok:hover {
-				background: #86BE77;
-			}
-			
-			.btn-ok:active {
-				background: #255625;
-			}
-			
-			.btn-cancel {
-				background: #DEDEDE;
-			}
-			
-			.btn-cancel:hover {
-				background: #E6E6E6;
-			}
-			
-			.btn-cancel:active {
-				background: #8C8C8C;
-			}
-			input,button,a{
-				  blr:expression_r(this.onFocus=this.blur());
-				  outline:none;
-				  border:0;
-			}
+
+.btn {
+	display: inline-block;
+	padding: 4px 10px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.btn-ok {
+	background: #71B25F;
+	color: #fff;
+}
+
+.btn-ok:hover {
+	background: #86BE77;
+}
+
+.btn-ok:active {
+	background: #255625;
+}
+
+.btn-cancel {
+	background: #DEDEDE;
+}
+
+.btn-cancel:hover {
+	background: #E6E6E6;
+}
+
+.btn-cancel:active {
+	background: #8C8C8C;
+}
+
+input,
+button,
+a {
+	blr: expression-r(this.onFocus=this.blur());
+	outline: none;
+	border: 0;
+}

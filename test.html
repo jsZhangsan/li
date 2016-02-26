@@ -9,97 +9,65 @@
 		<script src="js/win.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="css/win.css" />
 		<style>
+			.alert-content-parent {
+				width: 200px;
+				height: 100px;
+			}
 			.alert-content {
-				width: 80%;
 				margin: 0 auto;
-				padding: 20px 0;
+				padding: 20px 20px;
 			}
 			
 			.alert-foot {
 				text-align: center;
 			}
 			
-			.alert-foot button {
-				margin: 10px 20px;
-			}
-			
-			.pro-foot-contert {
+			.alert-foot-right {
 				text-align: right;
 			}
 			
-			
-			.btn {
-				display: inline-block;
-				padding: 4px 10px;
-				margin-bottom: 0;
-				font-size: 14px;
-				line-height: 1.42857143;
-				text-align: center;
-				white-space: nowrap;
-				vertical-align: middle;
-				cursor: pointer;
+			.alert-foot-btn {
+				margin: 10px 20px;
 			}
 			
-			.btn-ok {
-				background: #71B25F;
-				color: #fff;
-			}
-			
-			.btn-ok:hover {
-				background: #86BE77;
-			}
-			
-			.btn-ok:active {
-				background: #255625;
-			}
-			
-			.btn-cancel {
-				background: #DEDEDE;
-			}
-			
-			.btn-cancel:hover {
-				background: #E6E6E6;
-			}
-			
-			.btn-cancel:active {
-				background: #8C8C8C;
-			}
-			input,button,a{
-				  blr:expression_r(this.onFocus=this.blur());
-				  outline:none;
-				  border:0;
-			}
 		</style>
 	</head>
 
 	<body>
-		<div id="1" style="display: ;">
-			<div class="pro-content">
-				bootstrap-wysiwyg是一个jQuery Bootstrap插件（5KB,
-					< 200 行代码）可以将任何一个DIV转变成一个WYSIWYG富文本编辑器。
-			</div>
-			<div class="pro-foot">
-				<div class="pro-foot-contert clearfix">
-					<button class="btn btn-default">
-						确定
-					</button>
+		<div id="1" style="display:none ;">
+			<div class="alert-content-parent">
+				<div class="alert-content">
+					bootstrap-wysiwyg是一个jQuery
+					bootstrap-wysiwyg是一个jQuery
 				</div>
 			</div>
-		</div>
-		<div id="2" style="display: ;">
-			<div class="alert-content">
-				bootstrap-wysiwyg是一个jQuery
-			</div>
-			<div class="alert-foot">
-				<button class="btn btn-ok">
+			<div class="alert-foot-right">
+				<button class="btn btn-ok alert-foot-btn">
 					确定
 				</button>
-				<button class="btn btn-cancel">
+			</div>
+		</div>
+		<div id="2" style="display:none;">
+			<div class="alert-content">
+				<div >
+					bootstrap-wysiwyg是一个jQuery
+					bootstrap-wysiwyg是一个jQuery
+					bootstrap-wysiwyg是一个jQuery
+				</div>
+			</div>
+			<div class="alert-foot alert-foot-btn">
+				<button class="btn btn-ok alert-foot-btn">
+					确定
+				</button>
+				<button class="btn btn-cancel alert-foot-btn">
 					取消
 				</button>
 			</div>
 		</div>
-		<a href="javascript: $UI.openWin({id:'2'})"> 打开窗口</a>
+		
+		<div id="33" style="display: none;">大家好</div>
+		<a href="javascript:$UI.openWin({id:'33',title:'321'})"> 打开窗口</a>
+		
 	</body>
 
 </html>

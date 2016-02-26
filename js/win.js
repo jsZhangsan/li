@@ -13,10 +13,10 @@ var $UI = {
 	 * 加载背景色
 	 */
 	addbackground: function() {
-		if ($(".win_bg_black").length == 0) {
-			$("body").append('<div class="win_bg_black"></div>');
+		if ($(".win-bg-black").length == 0) {
+			$("body").append('<div class="win-bg-black"></div>');
 		} else {
-			$(".win_bg_black").show();
+			$(".win-bg-black").show();
 		}
 	},
 	/**
@@ -27,21 +27,20 @@ var $UI = {
 		this.addbackground();
 
 		if ($("#win_" + this.defaultData.id).length == 0) {
-			$("#" + this.defaultData.id).show().wrap('<div id="win_' + this.defaultData.id + '" class="win_dialog"><div class="win_content"></div></div>');
+			$("#" + this.defaultData.id).show().wrap('<div id="win_' + this.defaultData.id + '" class="win-dialog"><div class="win-content"></div></div>');
 			var w = $("#win_" + this.defaultData.id);
 
 			var btnClose = "";
 			if (this.defaultData.showCloseBtn) {
-				btnClose = "X"
+				btnClose = "×"
 			}
-			w.prepend('<div class="win_top"><span>' + this.defaultData.title + '</span><span class="win_erro_btn">' + btnClose + '</span></div>');
-
-			w.css("margin-left", -(w.outerWidth(true) / 2));
+			w.prepend('<div class="win-top"><span>' + this.defaultData.title + '</span><span class="win-erro-btn">' + btnClose + '</span></div>');
+			w.css("margin-left", -(w.outerWidth(true) / 2)+"px");
 
 			$this = this;
-			$(".win_erro_btn").on({
+			$(".win-erro-btn").on({
 				click: function() {
-					$this.closeWin($(this).parents(".win_dialog").attr("id").substring(4));
+					$this.closeWin($(this).parents(".win-dialog").attr("id").substring(4));
 				}
 			});
 		} else {
@@ -56,7 +55,7 @@ var $UI = {
 		w.hide();
 
 		var allHide = true;
-		$(".win_dialog").each(function() {
+		$(".win-dialog").each(function() {
 			if (!$(this).is(":hidden")) {
 				allHide = false;
 				return;
@@ -64,7 +63,7 @@ var $UI = {
 		});
 
 		if (allHide) {
-			$(".win_bg_black").hide();
+			$(".win-bg-black").hide();
 		}
 	}
 };
